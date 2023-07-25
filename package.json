@@ -1,0 +1,8 @@
+{
+  "name": "printwell",
+  "version": "1.0.0",
+  "description": "",
+  "main": "formatters.js",
+  "author": "Richard Antal Nagy",
+  "license": "ISC"
+}
