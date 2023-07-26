@@ -59,3 +59,32 @@ export function timeDelta(difference) {
 export function localTimeWithDelta(time, from = Date.now()) {
     return `${time.toLocaleString()} (${timeDelta( (from - time) / 1000.0 )})`
 }
+
+/**
+ * Convert a number to an ordered string.
+ * 1 -> 1st
+ * 136 -> 136th
+ */
+export function ordinal(number) {
+    let numstring = `${number}`
+    
+    if (numstring.endsWith('11')) {
+        return `${number}th`
+    }
+    if (numstring.endsWith('12')) {
+        return `${number}th`
+    }
+    if (numstring.endsWith('13')) {
+        return `${number}th`
+    }
+    if (numstring.endsWith('1')) {
+        return `${number}st`
+    }
+    if (numstring.endsWith('2')) {
+        return `${number}nd`
+    }
+    if (numstring.endsWith('3')) {
+        return `${number}rd`
+    }
+    return `${number}th`
+}
