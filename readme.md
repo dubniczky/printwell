@@ -1,4 +1,4 @@
 # Printwell
 
-JavaScript package that enables better formatting for your data
+Zero-dependency JavaScript package that enables better formatting for your data
 
